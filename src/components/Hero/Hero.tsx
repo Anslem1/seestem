@@ -1,3 +1,4 @@
+import Devices from "./Devices";
 import "./Hero.css";
 import ImageSlider from "./ImageSlider";
 
@@ -77,6 +78,9 @@ function Hero() {
                          <div className="animated-scroll">
                               <ImageSlider />
                          </div>
+                    </div>
+                    <div className="device-container">
+                         <Devices />
                     </div>
                </div>
           </>

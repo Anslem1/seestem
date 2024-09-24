@@ -6,7 +6,7 @@ function Navbar() {
                <div className="nav-pill"></div>
                <div className="nav-container">
                     <div className="nav-content">
-                         <h1>seestem</h1>
+                         <h1> seestem</h1>
                          <div>
                               <p>Work</p>
                               <p>Services</p>
@@ -14,6 +14,7 @@ function Navbar() {
                               <p>FAQs</p>
                          </div>
                          <button>Have an Idea?</button>
+                         
                     </div>
                </div>
           </>

@@ -55,8 +55,8 @@
 
 .hero-container > div > h1 {
      font-size: 70px;
-     font-weight: 500;
-     font-family: "Helvetica Neue";
+     font-weight: 700;
+     font-family: "Plus Jakarta Sans";
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -72,7 +72,7 @@
      flex-direction: column;
      gap: 5px;
      text-align: center;
-     font-size: 20px;
+     font-size: 18px;
 }
 .hero-container > div > p > span {
      display: block;
@@ -177,4 +177,37 @@
      width: 70px;
      height: 70px;
      object-fit: contain;
+}
+
+.device-container {
+     position: relative;
+     width: fit-content;
+     display: flex;
+
+}
+
+.image-wrapper {
+     position: relative;
+     display: inline-block;
+    
+}
+
+.image-wrapper img {
+     display: block;
+     width: 90%;
+     z-index: 10;
+}
+
+.overlay-div {
+     position: absolute;
+     top: 50%;
+     left: 45%;
+     width: 75%;
+     transform: translate(-50%, -50%);
+     color: white;
+     font-size: 24px;
+     background-color: rgba(0, 0, 0);
+     padding: 10px;
+     border-radius: 10%;
+     height: 90%;
 }

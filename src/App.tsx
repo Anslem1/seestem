@@ -1,13 +1,15 @@
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import "./index.css"
+import "./index.css";
 
 function App() {
      return (
           <>
                <div className="app-container">
-               <Navbar />
-                    <Hero />
+                    <div>
+                         <Navbar />
+                         <Hero />
+                    </div>
                </div>
           </>
      );

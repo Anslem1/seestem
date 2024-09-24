@@ -2,13 +2,13 @@ import React from "react";
 
 function ImageSlider() {
      const images = [
-          "../../../public/logos/apple.png",
-          "../../../public/logos/amazon.png",
-          "../../../public/logos/tesla.png",
-          "../../../public/logos/meta.png",
-          "../../../public/logos/google.png",
-          "../../../public/logos/microsoft.png",
-          "../../../public/logos/nvidia.png",
+          "../../../public/sliderLogos/apple.png",
+          "../../../public/sliderLogos/amazon.png",
+          "../../../public/sliderLogos/tesla.png",
+          "../../../public/sliderLogos/meta.png",
+          "../../../public/sliderLogos/google.png",
+          "../../../public/sliderLogos/microsoft.png",
+          "../../../public/sliderLogos/nvidia.png",
      ];
 
      return (
