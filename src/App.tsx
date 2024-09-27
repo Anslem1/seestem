@@ -6,11 +6,10 @@ function App() {
      return (
           <>
                <div className="app-container">
-                    <div>
-                         <Navbar />
-                         <Hero />
-                    </div>
+                    <Navbar />
+                    <Hero />
                </div>
+               
           </>
      );
 }

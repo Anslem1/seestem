@@ -1,6 +1,7 @@
 import Devices from "./Devices";
 import "./Hero.css";
 import ImageSlider from "./ImageSlider";
+import Mockup from "./Mockup";
 
 function Hero() {
      return (
@@ -80,7 +81,22 @@ function Hero() {
                          </div>
                     </div>
                     <div className="device-container">
-                         <Devices />
+                         <Devices
+                              deviceImage="/public/devicesMockUp/device-1.png"
+                              isFirst="true"
+                         />
+                         <Devices
+                              deviceImage="/public/devicesMockUp/device-2.png"
+                              isFirst="false"
+                         />
+                         <Devices
+                              deviceImage="/public/devicesMockUp/device-3.png"
+                              isFirst="false"
+                         />
+                    </div>
+                    <div className="site-mockup-container">
+                         <Mockup />
+                         <Mockup />
                     </div>
                </div>
           </>

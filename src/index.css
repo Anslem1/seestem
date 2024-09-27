@@ -11,6 +11,10 @@
      font-family: "Helvetica Neue";
      src: url("../public/fonts/Helvetica/HelveticaNeueMedium.otf") format("otf");
 }
+@font-face {
+     font-family: "San francisco";
+     src: url("../public/fonts/San Francisco/SFPRODISPLAYMEDIUM.OTF") format("OTF");
+}
 
 * {
      margin: 0;
@@ -20,8 +24,4 @@
      background: rgb(242, 242, 242);
      display: flex;
      justify-content: center;
-}
-
-.app-container > div {
-     width: 90%;
 }

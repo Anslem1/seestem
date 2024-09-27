@@ -1,30 +1,38 @@
-function Devices() {
-     const devices: string[] = [
-          "../../../public/devices/1.avif",
-          "../../../public/devices/2.avif",
-          "../../../public/devices/3.avif",
-     ];
-     function DeviceNav() {
-          return <>hi</>;
-     }
+interface DevicesProps {
+     deviceImage: string;
+     isFirst: string;
+}
 
+function Devices({ deviceImage, isFirst }: DevicesProps) {
+     const deviceFrame = "/devicesMockUp/iphoneFrame.avif";
      return (
           <>
                <div className="device-content">
                     <div className="image-wrapper">
-                         <img src={devices[0]} alt="Device 1" />
+                         <img src={deviceFrame} alt="Device" />
                          <div className="overlay-div first-wrapper">
-                              <DeviceNav />
+                              <img src={deviceImage} alt="" />
+
+                              {isFirst == "true" && (
+                                   <div className="first-device-wrapper">
+                                        <div className="chart-info">
+                                             <div>
+                                                  <img
+                                                       src="/public/devicesMockUp/chart-info/chart-briefing.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                             <div>
+                                                  <img
+                                                       src="/public/devicesMockUp/chart-info/apple-chart.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+                                   </div>
+                              )}
                          </div>
                     </div>
-                    {/* <div className="image-wrapper second-wrapper">
-                         <img src={devices[0]} alt="Device 1" />
-                         <div className="overlay-div"></div>
-                    </div>
-                    <div className="image-wrapper third-wrapper">
-                         <img src={devices[0]} alt="Device 1" />
-                         <div className="overlay-div"></div>
-                    </div> */}
                </div>
           </>
      );
